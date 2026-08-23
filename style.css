@@ -328,10 +328,11 @@ body.modal-open{overflow:hidden}
   .service p{font-size:.9rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
   .service-tag{margin-top:14px;padding:.35rem .65rem}.service-foot{margin-top:14px}
 
-  .photo-stack{min-height:300px}.photo-stack img{border-radius:20px}
+  .why-title{font-size:clamp(2rem,8vw,2.7rem);line-height:1}
+  .photo-stack{min-height:0;aspect-ratio:4/3}.photo-stack img{border-radius:18px}
   .photo-stack img:first-child{width:100%;height:100%;left:0}.photo-stack img:nth-child(2){display:none}
-  .reason-list{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-top:24px;padding:3px 0 12px;scrollbar-width:thin}
-  .reason{min-width:82%;scroll-snap-align:start;grid-template-columns:42px 1fr;gap:12px;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--cream)}
+  .reason-list{display:grid;grid-template-columns:1fr;overflow:visible;scroll-snap-type:none;gap:10px;margin-top:24px;padding:0}
+  .reason{min-width:0;scroll-snap-align:none;grid-template-columns:42px minmax(0,1fr);gap:12px;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--cream)}
   .reason-num{width:38px;height:38px}.reason h3{font-size:1.12rem}.reason p{font-size:.9rem}
   .quote-band{padding:55px 0}.quote-band blockquote{font-size:clamp(1.8rem,7.5vw,2.6rem)}
 
@@ -358,7 +359,8 @@ body.modal-open{overflow:hidden}
   .hero-proof{padding:13px}.proof{padding:9px}.proof b{font-size:1.05rem}.proof span{font-size:.62rem}
   .story-card{padding:17px;border-radius:17px}.story-card strong{font-size:1.15rem}.mobile-story-details p{font-size:.9rem}
   .service,.service:nth-child(1),.service:nth-child(4){padding:17px;border-radius:16px}.service h3{font-size:clamp(1.4rem,6.5vw,1.8rem)}
-  .photo-stack{min-height:270px}.reason-list{gap:10px}.reason{min-width:86%;padding:13px;border-radius:14px}
+  .why-title{font-size:clamp(2rem,8vw,2.55rem);line-height:1}
+  .photo-stack{min-height:0;aspect-ratio:4/3}.reason-list{display:grid;grid-template-columns:1fr;overflow:visible;scroll-snap-type:none;gap:9px;margin-top:18px;padding:0}.reason{min-width:0;padding:13px;border-radius:14px}
   .reason-num{width:34px;height:34px;font-size:.85rem}.reason h3{font-size:1.02rem}.reason p{font-size:.85rem}
   .quote-band{padding:48px 0}.quote-band blockquote{font-size:clamp(1.8rem,7.5vw,2.4rem)}
   .gallery-grid{gap:8px;margin-top:22px}.gallery-grid figure,.gallery-grid figure:first-child{aspect-ratio:1.12;border-radius:15px}.gallery-grid figure:first-child{aspect-ratio:1.35}
