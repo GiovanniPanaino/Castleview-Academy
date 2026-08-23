@@ -1,0 +1,47 @@
+/* ensure brand green exists here, too */
+:root { --gap: 1rem; --brand-green: #2e7d32; }
+
+/* --- DIALOG + CAROUSEL LAYOUT (bigger, consistent center column) --- */
+dialog { border:none; border-radius:16px; width:min(100%, 1100px); max-width:100%; padding:0; background:#0e0e0f; color:#fff; }
+
+.carousel{
+  display:grid;
+  grid-template-columns: 56px minmax(420px, clamp(560px, 82vw, 980px)) 56px; /* wider center track */
+  justify-content:center;
+  align-items:center;
+  gap:.6rem;
+}
+
+/* --- VIEWPORT: fixed, roomy box so slides never collapse --- */
+.viewport{
+  grid-column:2;
+  width:100%;
+  height: clamp(320px, 66vh, 760px);  /* << consistent visual box */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  background:#000;
+  border-radius:12px;
+  /* optional thin frame around the viewport itself */
+  /* border:1px solid rgba(46,125,50,.25); */
+}
+
+/* --- SLIDES --- */
+.slide{ position:relative; inset:auto; opacity:1; display:none; }
+.slide.active{ display:flex; }
+
+/* --- MEDIA: fill the viewport without going tiny --- */
+.slide img,
+.slide video{
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;            /* respect aspect ratio */
+  height: auto;
+  object-fit: contain;
+  display:block;
+  border: 8px solid var(--brand-green);
+  border-radius:12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  background:#000;
+}

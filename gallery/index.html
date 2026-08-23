@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Photo Gallery</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="/gallery/data/albums.json" as="fetch" crossorigin>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <section class="gallery-grid" id="albumsGrid" aria-live="polite"></section>
+
+  <dialog id="albumModal" aria-label="Album viewer">
+    <div class="modal-head">
+      <h3 id="albumTitle"></h3>
+      <button id="closeModal" aria-label="Close">✕</button>
+    </div>
+    <div class="carousel">
+      <button class="nav prev" id="prevBtn" aria-label="Previous">‹</button>
+      <div class="viewport" id="viewport" role="group" aria-roledescription="carousel"></div>
+      <button class="nav next" id="nextBtn" aria-label="Next">›</button>
+    </div>
+    <div class="pager" id="pager"></div>
+  </dialog>
+
+  <script src="gallery.js" defer></script>
+</body>
+</html>
