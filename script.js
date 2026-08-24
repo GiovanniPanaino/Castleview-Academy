@@ -87,7 +87,7 @@ const pathwayData = {
     eyebrow: '04 / FET & matric',
     title: 'Serious support when the stakes become real.',
     lead: 'Grades 10–12 require stronger subject mastery, exam technique and disciplined preparation. We help learners turn a large workload into an achievable plan.',
-    image: 'gallery/albums/GroupPhotos/group-photo-2024.webp',
+    image: 'gallery/albums/FET Ma\'am Deb.png',
     imageAlt: 'Castleview senior learners together',
     details: [
       ['Academic support', 'Subject guidance, difficult concepts, assessment preparation, revision planning and focused intervention where marks are being lost.'],
@@ -113,7 +113,7 @@ const pathwayData = {
     eyebrow: '06 / Matric subject rewrite',
     title: 'A second attempt deserves a better strategy.',
     lead: 'For learners returning to improve individual matric subjects, the focus is no longer simply “do it again”. We identify what failed the first time and prepare differently.',
-    image: 'gallery/albums/OurBranding/entrance.webp',
+    image: 'gallery/albums/FET Physics.png',
     imageAlt: 'Castleview Private Academy entrance',
     details: [
       ['Targeted preparation', 'Revision is centred on the chosen subject, weak topics and the type of questions that consistently cost marks.'],
