@@ -380,3 +380,734 @@ body.modal-open{overflow:hidden}
   form{padding:16px;border-radius:18px}.form-grid{gap:10px}.form-section-label{margin-top:6px;padding-top:8px}.form-actions{gap:8px;margin-top:14px}
   input,select,textarea{padding:.7rem .8rem}.footer-grid{gap:18px}.legal{gap:8px;margin-top:20px;padding-top:13px;font-size:.7rem}
 }
+/* =========================================================
+   CASTLEVIEW DIGITAL LEARNING TOOLS
+========================================================= */
+
+.digital-tools{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(
+      circle at 10% 15%,
+      rgba(166,31,43,.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 88% 72%,
+      rgba(201,155,67,.10),
+      transparent 28%
+    ),
+    linear-gradient(
+      145deg,
+      #061610 0%,
+      #0b2a20 52%,
+      #071a14 100%
+    );
+  color:#fff;
+}
+
+
+/* subtle technical grid */
+
+.digital-tools:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.16;
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,.045) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.045) 1px,
+      transparent 1px
+    );
+  background-size:46px 46px;
+}
+
+
+/* red decorative glow */
+
+.digital-tools:after{
+  content:"";
+  position:absolute;
+  width:500px;
+  height:500px;
+  border-radius:50%;
+  left:-250px;
+  bottom:-240px;
+  border:1px solid rgba(166,31,43,.22);
+  box-shadow:
+    0 0 0 70px rgba(166,31,43,.028),
+    0 0 0 140px rgba(166,31,43,.018);
+}
+
+
+.digital-tools .wrap{
+  position:relative;
+  z-index:2;
+}
+
+
+.digital-tools-head{
+  max-width:900px;
+  margin-bottom:clamp(2.5rem,5vw,4.8rem);
+}
+
+
+.digital-tools .section-title{
+  color:#fff;
+  max-width:980px;
+}
+
+
+.digital-tools .section-intro{
+  color:rgba(255,255,255,.68);
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.digital-tools-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:clamp(18px,3vw,34px);
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.digital-tool-card{
+  display:flex;
+  flex-direction:column;
+  min-height:620px;
+  border-radius:28px;
+  overflow:hidden;
+  color:#fff;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.075),
+      rgba(255,255,255,.025)
+    );
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 32px 80px rgba(0,0,0,.28);
+  backdrop-filter:blur(12px);
+  position:relative;
+  isolation:isolate;
+
+  transition:
+    transform .45s cubic-bezier(.2,.8,.2,1),
+    border-color .35s ease,
+    box-shadow .45s ease;
+}
+
+
+.digital-tool-card:before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:4px;
+  z-index:5;
+}
+
+
+/* Elemental = green/gold */
+
+.elemental-card:before{
+  background:
+    linear-gradient(
+      90deg,
+      var(--forest-2),
+      var(--gold)
+    );
+}
+
+
+/* MathForge = red/gold */
+
+.mathforge-card:before{
+  background:
+    linear-gradient(
+      90deg,
+      var(--red-bright),
+      var(--gold)
+    );
+}
+
+
+.digital-tool-card:hover{
+  transform:translateY(-12px);
+  border-color:rgba(201,155,67,.42);
+  box-shadow:0 42px 110px rgba(0,0,0,.38);
+}
+
+
+/* =========================================================
+   VISUAL AREA
+========================================================= */
+
+.digital-tool-visual{
+  min-height:330px;
+  display:grid;
+  place-items:center;
+  padding:clamp(22px,3vw,36px);
+  overflow:hidden;
+}
+
+
+/* Elemental visual */
+
+.elemental-card .digital-tool-visual{
+  background:
+    radial-gradient(
+      circle at 24% 28%,
+      rgba(31,111,83,.55),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 78% 76%,
+      rgba(201,155,67,.16),
+      transparent 32%
+    ),
+    #082018;
+}
+
+
+/* MathForge visual */
+
+.mathforge-card .digital-tool-visual{
+  background:
+    radial-gradient(
+      circle at 20% 28%,
+      rgba(166,31,43,.45),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 82% 72%,
+      rgba(201,155,67,.17),
+      transparent 30%
+    ),
+    #1a1011;
+}
+
+
+/* Browser mockup */
+
+.tool-browser{
+  width:min(100%,520px);
+  border-radius:18px;
+  overflow:hidden;
+  background:#111;
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:
+    0 28px 70px rgba(0,0,0,.35),
+    inset 0 1px rgba(255,255,255,.08);
+
+  transform:
+    perspective(900px)
+    rotateX(3deg)
+    rotateY(-2deg);
+
+  transition:transform .45s ease;
+}
+
+
+.digital-tool-card:hover .tool-browser{
+  transform:
+    perspective(900px)
+    rotateX(0)
+    rotateY(0)
+    scale(1.025)
+    translateY(-5px);
+}
+
+
+/* fake browser top */
+
+.tool-browser-bar{
+  height:36px;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  padding:0 12px;
+  background:rgba(255,255,255,.08);
+}
+
+
+.tool-browser-bar span{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:rgba(255,255,255,.28);
+}
+
+
+.tool-browser-bar span:first-child{
+  background:var(--red-bright);
+}
+
+
+.tool-browser-bar span:nth-child(2){
+  background:var(--gold);
+}
+
+
+.tool-browser-bar span:nth-child(3){
+  background:var(--forest-2);
+}
+
+
+/* preview */
+
+.tool-preview{
+  min-height:240px;
+  display:grid;
+  place-content:center;
+  justify-items:center;
+  gap:12px;
+  padding:24px;
+  text-align:center;
+  position:relative;
+}
+
+
+.elemental-preview{
+  background:
+    linear-gradient(
+      145deg,
+      #102f24,
+      #071a14
+    );
+}
+
+
+.mathforge-preview{
+  background:
+    linear-gradient(
+      145deg,
+      #2a1216,
+      #121914
+    );
+}
+
+
+.tool-preview-label{
+  font-size:.68rem;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.15em;
+  color:rgba(255,255,255,.55);
+}
+
+
+.tool-preview p{
+  margin:0;
+  font-size:.78rem;
+  color:rgba(255,255,255,.45);
+}
+
+
+/* Elemental symbol */
+
+.element-symbol{
+  width:92px;
+  height:92px;
+  display:grid;
+  place-content:center;
+  text-align:center;
+  border-radius:15px;
+  border:1px solid rgba(201,155,67,.35);
+  background:rgba(255,255,255,.055);
+  box-shadow:0 12px 30px rgba(0,0,0,.22);
+}
+
+
+.element-symbol strong{
+  font-family:Georgia,serif;
+  font-size:2.7rem;
+  line-height:.8;
+  color:#fff;
+}
+
+
+.element-symbol small{
+  font-size:.62rem;
+  margin-top:8px;
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+
+
+/* MathForge mark */
+
+.forge-mark{
+  width:92px;
+  height:92px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:
+    linear-gradient(
+      145deg,
+      var(--red-bright),
+      var(--red-deep)
+    );
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:
+    0 14px 36px rgba(166,31,43,.34);
+}
+
+
+.forge-mark strong{
+  font-family:Georgia,serif;
+  font-size:3rem;
+  line-height:1;
+  color:#fff;
+}
+
+
+/* =========================================================
+   TEXT CONTENT
+========================================================= */
+
+.digital-tool-copy{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  padding:clamp(24px,3vw,34px);
+}
+
+
+.tool-meta{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  margin-bottom:18px;
+}
+
+
+.tool-number{
+  font-size:.78rem;
+  font-weight:900;
+  color:var(--gold);
+  letter-spacing:.12em;
+}
+
+
+.tool-category{
+  font-size:.68rem;
+  text-transform:uppercase;
+  letter-spacing:.09em;
+  color:rgba(255,255,255,.5);
+  text-align:right;
+}
+
+
+.digital-tool-copy h3{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(2.2rem,4vw,4rem);
+  line-height:.95;
+  margin:0 0 16px;
+  letter-spacing:-.035em;
+}
+
+
+.digital-tool-copy p{
+  margin:0;
+  max-width:580px;
+  color:rgba(255,255,255,.67);
+  line-height:1.7;
+}
+
+
+/* =========================================================
+   CARD FOOTER
+========================================================= */
+
+.tool-footer{
+  margin-top:auto;
+  padding-top:28px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  font-weight:850;
+}
+
+
+.tool-footer > span:first-child{
+  position:relative;
+}
+
+
+.tool-footer > span:first-child:after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:100%;
+  bottom:-5px;
+  height:2px;
+  background:
+    linear-gradient(
+      90deg,
+      var(--red),
+      var(--gold)
+    );
+  transition:.35s ease;
+}
+
+
+.digital-tool-card:hover .tool-footer > span:first-child:after{
+  right:0;
+}
+
+
+.tool-arrow{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.14);
+  transition:
+    transform .3s ease,
+    background .3s ease;
+}
+
+
+.elemental-card:hover .tool-arrow{
+  background:var(--forest-2);
+  transform:translateX(4px);
+}
+
+
+.mathforge-card:hover .tool-arrow{
+  background:var(--red);
+  transform:translateX(4px);
+}
+
+
+/* =========================================================
+   BOTTOM NOTE
+========================================================= */
+
+.digital-tools-note{
+  margin-top:34px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  color:rgba(255,255,255,.52);
+  font-size:.86rem;
+}
+
+
+.digital-tools-note p{
+  margin:0;
+}
+
+
+.digital-tools-line{
+  width:54px;
+  height:1px;
+  flex:0 0 auto;
+  background:
+    linear-gradient(
+      90deg,
+      var(--red),
+      var(--gold)
+    );
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width:768px) and (max-width:1000px){
+
+  .digital-tool-card{
+    min-height:560px;
+  }
+
+  .digital-tool-visual{
+    min-height:280px;
+    padding:24px;
+  }
+
+  .tool-preview{
+    min-height:210px;
+  }
+
+  .digital-tool-copy h3{
+    font-size:clamp(2rem,4.5vw,3rem);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:767px){
+
+  .digital-tools-grid{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+
+
+  .digital-tools-head{
+    margin-bottom:28px;
+  }
+
+
+  .digital-tool-card{
+    min-height:0;
+    border-radius:20px;
+  }
+
+
+  .digital-tool-visual{
+    min-height:220px;
+    padding:18px;
+  }
+
+
+  .tool-browser{
+    border-radius:14px;
+  }
+
+
+  .tool-browser-bar{
+    height:28px;
+  }
+
+
+  .tool-preview{
+    min-height:165px;
+    padding:18px;
+  }
+
+
+  .element-symbol,
+  .forge-mark{
+    width:68px;
+    height:68px;
+  }
+
+
+  .element-symbol strong{
+    font-size:2rem;
+  }
+
+
+  .forge-mark strong{
+    font-size:2.2rem;
+  }
+
+
+  .digital-tool-copy{
+    padding:20px;
+  }
+
+
+  .tool-meta{
+    margin-bottom:12px;
+  }
+
+
+  .digital-tool-copy h3{
+    font-size:clamp(1.85rem,8vw,2.5rem);
+    margin-bottom:10px;
+  }
+
+
+  .digital-tool-copy p{
+    font-size:.9rem;
+    line-height:1.6;
+
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+
+
+  .tool-footer{
+    padding-top:18px;
+    font-size:.9rem;
+  }
+
+
+  .tool-arrow{
+    width:38px;
+    height:38px;
+  }
+
+
+  .digital-tools-note{
+    margin-top:22px;
+    align-items:flex-start;
+    font-size:.8rem;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width:479px){
+
+  .digital-tool-visual{
+    min-height:190px;
+    padding:14px;
+  }
+
+
+  .tool-preview{
+    min-height:145px;
+  }
+
+
+  .digital-tool-copy{
+    padding:17px;
+  }
+
+
+  .digital-tool-copy h3{
+    font-size:1.85rem;
+  }
+
+
+  .digital-tool-copy p{
+    font-size:.86rem;
+  }
+
+
+  .tool-category{
+    max-width:150px;
+  }
+
+
+  .digital-tools-note{
+    font-size:.76rem;
+  }
+
+}
