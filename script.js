@@ -61,8 +61,8 @@ const pathwayData = {
     eyebrow: '02 / Primary foundations',
     title: 'Build the foundations before the cracks become gaps.',
     lead: 'Younger learners need repetition, encouragement and patient explanation. We focus on strong basics while helping them develop confidence and healthy learning routines.',
-    image: 'gallery/albums/InClass/arts_crafts.webp',
-    imageAlt: 'Castleview learners taking part in a creative classroom activity',
+    image: 'gallery/albums/GroupPhotos/group-photo-staff-2025.webp',
+    imageAlt: 'Castleview Private Academy group photo with staff, 2025',
     details: [
       ['Core focus', 'Literacy, reading comprehension, writing, numeracy, projects and age-appropriate study habits.'],
       ['How support works', 'Small-group guidance gives learners room to ask questions and receive explanations at a manageable pace.'],
