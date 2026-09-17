@@ -2,108 +2,86 @@
   {
     "id": "OurBranding",
     "title": "Our Branding",
-    "cover": "gallery/albums/OurBranding/coat_of_arms.png",
-    "count": 0,
-    "path": "gallery/albums/OurBranding",
-	"images": [
-  "gallery/albums/OurBranding/2026-registrations.png",
-  "gallery/albums/OurBranding/castleview_logo.webp",
-  "gallery/albums/OurBranding/castleview-logo-new.png",
-  "gallery/albums/OurBranding/coat_of_arms.webp",
-  "gallery/albums/OurBranding/entrance.webp"
-  ]
+    "cover": "albums/OurBranding/coat_of_arms.webp",
+    "images": [
+      "albums/OurBranding/2026-registrations.png",
+      "albums/OurBranding/castleview_logo.webp",
+      "albums/OurBranding/castleview-logo-new.webp",
+      "albums/OurBranding/coat_of_arms.webp",
+      "albums/OurBranding/entrance.webp"
+    ]
   },
   {
     "id": "GroupPhotos",
     "title": "Group Photos",
-    "cover": "gallery/albums/GroupPhotos/class-photo.webp",
-    "count": 0,
-    "path": "gallery/albums/GroupPhotos",
-	"images": [
-	"gallery/albums/GroupPhotos/class-photo.webp",
-	"gallery/albums/GroupPhotos/group-photo-2024.webp",
-	"gallery/albums/GroupPhotos/group-photo-staff-2025.webp",
-	"gallery/albums/GroupPhotos/last_day.webp",
-	"gallery/albums/GroupPhotos/online-class-of-2025.webp",
-	"gallery/albums/GroupPhotos/online-class-of-2025-2.webp",
-	"gallery/albums/GroupPhotos/online-class-of-2025-3.webp",
-	"gallery/albums/GroupPhotos/online-class-of-2025-4.webp",
-	"gallery/albums/GroupPhotos/online-class-of-2025-5.webp",
-	"gallery/albums/GroupPhotos/or-thambo.webp"
-	]
+    "cover": "albums/GroupPhotos/class-photo.webp",
+    "images": [
+      "albums/GroupPhotos/class-photo.webp",
+      "albums/GroupPhotos/group-photo-2024.webp",
+      "albums/GroupPhotos/group-photo-staff-2025.webp",
+      "albums/GroupPhotos/last_day.webp",
+      "albums/GroupPhotos/online-class-of-2025.webp",
+      "albums/GroupPhotos/online-class-of-2025-2.webp",
+      "albums/GroupPhotos/online-class-of-2025-3.webp",
+      "albums/GroupPhotos/online-class-of-2025-4.webp",
+      "albums/GroupPhotos/online-class-of-2025-5.webp",
+      "albums/GroupPhotos/or-thambo.webp"
+    ]
   },
   {
     "id": "HeritageDay2025",
     "title": "Heritage Day 2025",
-    "cover": "gallery/albums/HeritageDay2025/heritage-day-2025-4.jpg",
-    "path": "gallery/albums/HeritageDay2025",
+    "cover": "albums/HeritageDay2025/heritage-day-2025-4.jpg",
     "images": [
-      "gallery/albums/HeritageDay2025/heritage-day-2025-4.jpg",
-      "gallery/albums/HeritageDay2025/heritage-day-2025-5.jpg",
-      "gallery/albums/HeritageDay2025/heritage-day-2025-6.jpg",
-      {
-        "type": "video",
-        "src": "gallery/albums/HeritageDay2025/heritage-day-2025.mp4",
-        "poster": "gallery/albums/HeritageDay2025/heritage-day-2025-4.jpg",
-        "mime": "video/mp4"
-      },
-      "gallery/albums/HeritageDay2025/heritage-day-2025-7.jpg",
-      "gallery/albums/HeritageDay2025/heritage-day-2025-10.jpg"
+      "albums/HeritageDay2025/heritage-day-2025-4.jpg",
+      "albums/HeritageDay2025/heritage-day-2025-5.jpg",
+      "albums/HeritageDay2025/heritage-day-2025-6.jpg",
+      "albums/HeritageDay2025/heritage-day-2025-7.jpg",
+      "albums/HeritageDay2025/heritage-day-2025-10.jpg"
     ]
   },
   {
     "id": "InClass",
     "title": "In Class",
-    "cover": "gallery/albums/InClass/arts_crafts.webp",
-    "count": 0,
-    "path": "gallery/albums/InClass",
-	"images": [
-	"gallery/albums/InClass/arts_crafts.webp",
-	"gallery/albums/InClass/debs-class.webp",
-	"gallery/albums/InClass/group-study.webp",
-	"gallery/albums/InClass/in-class.webp"
-	]
+    "cover": "albums/InClass/arts_crafts.webp",
+    "images": [
+      "albums/InClass/arts_crafts.webp",
+      "albums/InClass/debs-class.webp",
+      "albums/InClass/group-study.webp",
+      "albums/InClass/in-class.webp"
+    ]
   },
   {
     "id": "Staff",
     "title": "Our Staff",
-    "cover": "gallery/albums/Staff/our-crew2025.webp",
-    "count": 0,
-    "path": "gallery/albums/Staff"
+    "cover": "albums/Staff/our-crew2025.webp",
+    "images": [
+      "albums/Staff/our-crew2025.webp"
+    ]
   },
   {
     "id": "RewardsEvents",
     "title": "Rewards & Events",
-    "cover": "gallery/albums/RewardsEvents/2022-Matrics.webp",
-    "count": 0,
-    "path": "gallery/albums/RewardsEvents",
-	"images": [
-	"gallery/albums/RewardsEvents/matrics-2022.webp",
-	"gallery/albums/RewardsEvents/our-first-matriculant.webp",
-	"gallery/albums/RewardsEvents/rewards-night-2022.webp",
-	"gallery/albums/RewardsEvents/rewards-night-2024.webp",
-	"gallery/albums/RewardsEvents/rewards-night-2024-2.webp",
-	{
-        "type": "video",
-        "src": "gallery/albums/RewardsEvents/2025-valedictory-service.mp4",
-        "poster": "gallery/albums/RewardsEvents/2025-valedictory-service.jpg",
-        "mime": "video/mp4"
-      },
-	"gallery/albums/RewardsEvents/School-rewards.webp",
-	"gallery/albums/RewardsEvents/school-rewards2.webp",
-	"gallery/albums/RewardsEvents/2022-Matrics.webp"
-	]
+    "cover": "albums/RewardsEvents/2022-Matrics.webp",
+    "images": [
+      "albums/RewardsEvents/matrics-2022.webp",
+      "albums/RewardsEvents/our-first-matriculant.webp",
+      "albums/RewardsEvents/rewards-night-2022.webp",
+      "albums/RewardsEvents/rewards-night-2024.webp",
+      "albums/RewardsEvents/rewards-night-2024-2.webp",
+      "albums/RewardsEvents/School-rewards.webp",
+      "albums/RewardsEvents/school-rewards2.webp",
+      "albums/RewardsEvents/2022-Matrics.webp"
+    ]
   },
   {
     "id": "OurAccreditation",
     "title": "Our Accreditation",
-    "cover": "gallery/albums/OurAccreditation/accreditation_a_madume.webp",
-    "count": 0,
-    "path": "gallery/albums/OurAccreditation",
-	"images": [
-	"gallery/albums/OurAccreditation/accreditation_a_madume.webp",
-	"gallery/albums/OurAccreditation/accreditation_d_panaino.webp",
-	"gallery/albums/OurAccreditation/accreditation_g_panaino.webp"
-	]
+    "cover": "albums/OurAccreditation/accreditation_a_madume.webp",
+    "images": [
+      "albums/OurAccreditation/accreditation_a_madume.webp",
+      "albums/OurAccreditation/accreditation_d_panaino.webp",
+      "albums/OurAccreditation/accreditation_g_panaino.webp"
+    ]
   }
 ]

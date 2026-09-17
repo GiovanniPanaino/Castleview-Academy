@@ -87,7 +87,7 @@ const pathwayData = {
     eyebrow: '04 / FET & matric',
     title: 'Serious support when the stakes become real.',
     lead: 'Grades 10–12 require stronger subject mastery, exam technique and disciplined preparation. We help learners turn a large workload into an achievable plan.',
-    image: 'gallery/albums/FET Ma\'am Deb.png',
+    image: 'gallery/albums/FET Ma\'am Deb.webp',
     imageAlt: 'Castleview senior learners together',
     details: [
       ['Academic support', 'Subject guidance, difficult concepts, assessment preparation, revision planning and focused intervention where marks are being lost.'],
@@ -100,8 +100,8 @@ const pathwayData = {
     eyebrow: '05 / Homework support',
     title: 'A productive afternoon instead of an evening battle.',
     lead: 'Homework support gives learners a structured environment where they can complete schoolwork, ask for help and deal with misunderstandings before going home.',
-    image: 'gallery/albums/Staircase.jpeg',
-    imageAlt: 'Castleview learning centre interior',
+    image: 'gallery/albums/GroupPhotos/or-thambo.webp',
+    imageAlt: 'Castleview group visiting O. R. Tambo',
     details: [
       ['Daily structure', 'A calm place to work through homework, projects and upcoming assessments with guidance nearby.'],
       ['When they get stuck', 'Tutors can explain the concept rather than allowing a learner to guess their way through the task.'],
@@ -113,8 +113,8 @@ const pathwayData = {
     eyebrow: '06 / Matric subject rewrite',
     title: 'A second attempt deserves a better strategy.',
     lead: 'For learners returning to improve individual matric subjects, the focus is no longer simply “do it again”. We identify what failed the first time and prepare differently.',
-    image: 'gallery/albums/FET Physics.png',
-    imageAlt: 'Castleview Private Academy entrance',
+    image: 'gallery/albums/AfterSchoolClass.webp',
+    imageAlt: 'After-school class at Castleview Private Academy',
     details: [
       ['Targeted preparation', 'Revision is centred on the chosen subject, weak topics and the type of questions that consistently cost marks.'],
       ['Past papers', 'Practice under exam-style conditions helps develop familiarity, timing and confidence.'],

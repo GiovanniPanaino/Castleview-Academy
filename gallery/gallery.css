@@ -1,47 +1,21 @@
-/* ensure brand green exists here, too */
-:root { --gap: 1rem; --brand-green: #2e7d32; }
-
-/* --- DIALOG + CAROUSEL LAYOUT (bigger, consistent center column) --- */
-dialog { border:none; border-radius:16px; width:min(100%, 1100px); max-width:100%; padding:0; background:#0e0e0f; color:#fff; }
-
-.carousel{
-  display:grid;
-  grid-template-columns: 56px minmax(420px, clamp(560px, 82vw, 980px)) 56px; /* wider center track */
-  justify-content:center;
-  align-items:center;
-  gap:.6rem;
-}
-
-/* --- VIEWPORT: fixed, roomy box so slides never collapse --- */
-.viewport{
-  grid-column:2;
-  width:100%;
-  height: clamp(320px, 66vh, 760px);  /* << consistent visual box */
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  overflow:hidden;
-  background:#000;
-  border-radius:12px;
-  /* optional thin frame around the viewport itself */
-  /* border:1px solid rgba(46,125,50,.25); */
-}
-
-/* --- SLIDES --- */
-.slide{ position:relative; inset:auto; opacity:1; display:none; }
-.slide.active{ display:flex; }
-
-/* --- MEDIA: fill the viewport without going tiny --- */
-.slide img,
-.slide video{
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;            /* respect aspect ratio */
-  height: auto;
-  object-fit: contain;
-  display:block;
-  border: 8px solid var(--brand-green);
-  border-radius:12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.25);
-  background:#000;
-}
+﻿:root{--brand-green:#2e7d32}
+*{box-sizing:border-box}
+body{margin:0;padding:16px;font-family:system-ui,sans-serif;background:#fffdf8;color:#071a14}
+button{font:inherit;cursor:pointer}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px;max-width:1240px;margin:auto}
+.album-card{padding:0;overflow:hidden;text-align:left;background:#fff;border:1px solid #d9e1dc;border-radius:12px;color:inherit}
+.album-card img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block}
+.album-name{display:block;padding:12px 16px;font-weight:700}
+button:focus-visible{outline:3px solid #c99b43;outline-offset:2px}
+dialog{border:0;border-radius:16px;width:min(calc(100% - 24px),1100px);max-width:100%;max-height:92dvh;padding:0;background:#0e0e0f;color:#fff}
+dialog::backdrop{background:rgba(4,18,13,.75)}
+.modal-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px}
+.modal-head h3{margin:0;font-size:1rem}
+.modal-head button,.nav{width:44px;height:44px;flex-shrink:0;border:0;border-radius:50%;background:#183f32;color:#fff;font-size:1.5rem}
+.carousel{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;gap:8px;padding:0 8px}
+.viewport{grid-column:2;width:100%;height:clamp(240px,66dvh,760px);display:flex;align-items:center;justify-content:center;overflow:hidden;background:#000;border-radius:12px}
+.viewport img,.viewport video{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.pager{display:flex;flex-wrap:wrap;justify-content:center;padding:12px;gap:8px}
+.dot{width:12px;height:12px;padding:0;border:1px solid #c99b43;border-radius:50%;background:transparent}
+.dot.active{background:#c99b43}
+@media(max-width:479px){body{padding:12px}.carousel{grid-template-columns:32px minmax(0,1fr) 32px;gap:4px;padding:0 4px}.nav{width:32px;height:44px}.viewport{height:60dvh}}
